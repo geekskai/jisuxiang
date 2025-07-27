@@ -2,7 +2,7 @@ import {
   faCode, faExchangeAlt, faClock, faGlobe, faLink, faLock, 
   faImage, faCogs, faFileCode, faKey, faFont, 
   faCalendarAlt, faPalette, faEdit, faRuler, faNetworkWired,
-  faEraser, faCalculator, faFileAlt
+  faEraser, faCalculator, faFileAlt, faCube
 } from '@fortawesome/free-solid-svg-icons';
 import { Tool } from '@/types/tools';
 
@@ -167,16 +167,16 @@ const tools: Tool[] = [
     keywords: ['图片水印', '水印', '水印添加', '图片', '文字水印', '图片水印', 'watermark', 'image watermark', 'tupian shuiyin', 'tpshuiyin', 'shuiyin', 'sy', 'tp']
   },
   {
-    code: 'image_to_ico',
-    icon: faImage,
-    category: ['image'],
-    keywords: ['图标', 'ico', '图片转ico', 'icon', '图标生成', '图标转换', 'favicon', '网站图标', 'tubiao', 'tb', 'zhuanicon', 'icon转换', 'icon生成']
-  },
-  {
     code: 'cron_generator',
     icon: faCalendarAlt,
     category: ['datetime'],
     keywords: ['cron', 'cron表达式', '定时任务', '调度', '表达式生成', '执行时间', 'crontab', 'quartz', 'schedule', 'dingshi', 'dingshibiaodashi', 'dsrw', 'bds', 'cronbds']
+  },
+  {
+    code: 'icon_designer',
+    icon: faCube,
+    category: ['common', 'image'],
+    keywords: ['图标设计', '图标生成', 'icon设计', '图标制作', 'app图标', 'logo设计', 'favicon制作', '图标工具', 'icon designer', 'icon generator', 'tubiao', 'tb', 'sheji', 'sj', 'zhizuo', 'zz']
   }
 ] as Tool[];
 

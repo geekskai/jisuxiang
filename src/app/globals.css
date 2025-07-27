@@ -249,6 +249,28 @@ body {
     filter: drop-shadow(0 0 3px rgba(var(--color-primary), 0.3));
   }
   
+  /* 选项按钮样式 */
+  .btn-option {
+    @apply px-3 py-1.5 rounded-md border text-sm font-medium transition-all;
+    background-color: rgb(var(--color-bg-secondary));
+    color: rgb(var(--color-text-secondary));
+    border-color: rgba(var(--color-primary), 0.1);
+  }
+  
+  .btn-option:hover {
+    border-color: rgba(var(--color-primary), 0.5);
+    color: rgb(var(--color-text-primary));
+    background-color: rgba(var(--color-primary), 0.1);
+  }
+  
+  .btn-option-active {
+    @apply px-3 py-1.5 rounded-md border text-sm font-medium transition-all;
+    background: linear-gradient(to right, rgb(var(--color-primary)), rgb(var(--color-primary-hover)));
+    color: white;
+    border-color: rgba(var(--color-primary), 0.7);
+    box-shadow: 0 2px 4px rgba(var(--color-primary), 0.4);
+  }
+  
   /* 圆角按钮 */
   .rounded-button {
     @apply rounded-md;
