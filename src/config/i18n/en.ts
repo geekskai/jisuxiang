@@ -32,7 +32,11 @@ export const en = {
     image_watermark: tools.image_watermark.en,
     image_to_ico: tools.image_to_ico.en,
     cron_generator: tools.cron_generator.en,
-    icon_designer: tools.icon_designer.en
+    icon_designer: tools.icon_designer.en,
+
+    pdf_converter: tools.pdf_converter.en,
+    pdf_manager: tools.pdf_manager.en,
+    pdf_compressor: tools.pdf_compressor.en,
   }
 };
 
