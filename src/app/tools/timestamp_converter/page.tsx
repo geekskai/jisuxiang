@@ -187,13 +187,6 @@ export default function TimestampConverter() {
     dateTimeToTimestamp(value);
   };
   
-  // 使用常用时间戳
-  const handleUseCommonTimestamp = (ts: number) => {
-    const tsStr = ts.toString();
-    setTimestamp(tsStr);
-    timestampToDateTime(tsStr);
-  };
-  
   // 刷新计算，使用当前时间
   const refreshWithCurrentTime = () => {
     const now = new Date();
@@ -202,23 +195,11 @@ export default function TimestampConverter() {
     timestampToDateTime(currentTimestamp.toString());
   };
   
-  // 使用当前时间更新日期时间输入
-  const setCurrentDateTime = () => {
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = String(now.getMonth() + 1).padStart(2, '0');
-    const day = String(now.getDate()).padStart(2, '0');
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const seconds = String(now.getSeconds()).padStart(2, '0');
-    
-    const nowDateTime = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}`;
-    setDateTime(nowDateTime);
-    setFormattedDateTime(`${year}-${month}-${day} ${hours}:${minutes}:${seconds}`);
-    
-    // 转换为时间戳
-    const timestamp = Math.floor(now.getTime() / 1000);
-    setTimestamp(timestamp.toString());
+  // 使用常用时间戳
+  const handleUseCommonTimestamp = (ts: number) => {
+    const tsStr = ts.toString();
+    setTimestamp(tsStr);
+    timestampToDateTime(tsStr);
   };
   
   // 复制时间戳到剪贴板
@@ -258,6 +239,25 @@ export default function TimestampConverter() {
     
     // 切换位置状态
     setSwapped(!swapped);
+  };
+
+  // 使用当前时间更新日期时间输入
+  const setCurrentDateTime = () => {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    
+    const nowDateTime = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}`;
+    setDateTime(nowDateTime);
+    setFormattedDateTime(`${year}-${month}-${day} ${hours}:${minutes}:${seconds}`);
+    
+    // 转换为时间戳
+    const timestamp = Math.floor(now.getTime() / 1000);
+    setTimestamp(timestamp.toString());
   };
 
   // 渲染时间戳区域

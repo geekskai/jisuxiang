@@ -681,7 +681,7 @@ export default function Home() {
       {/* 主内容区域 */}
       <main className="flex-1 container mx-auto">
         {/* 分类导航 - 独立导航栏 */}
-        <div className="flex flex-wrap nav-bar gap-2 sm:gap-4 mb-6 sm:mb-8 mt-6">
+        <div className="flex flex-wrap nav-bar gap-2 sm:gap-3 mb-6 sm:mb-8 mt-6">
           {allCategories.map((category, index) => (
             <button 
               key={index}

@@ -36,6 +36,7 @@ export const commonZh = {
     text: '文本处理',
     image: '图像工具',
     frontend: '前端开发',
+    pdf: 'PDF工具',
     favorites: '我的收藏'
   }
 };

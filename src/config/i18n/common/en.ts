@@ -36,6 +36,7 @@ export const commonEn = {
     text: 'Text Processing',
     image: 'Image Tools',
     frontend: 'Frontend Dev',
+    pdf: 'PDF Tools',
     favorites: 'My Favorites'
   }
 };

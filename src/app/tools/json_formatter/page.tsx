@@ -190,7 +190,7 @@ export default function JsonFormatter() {
     
     try {
       // 直接在原始输入字符串上移除转义斜杠
-      const processed = jsonInput.replace(/\\\//g, '/');
+      const processed = jsonInput.replace(/\\\/+/g, '/');
       
       // 检查是否有变化
       if (processed === jsonInput) {

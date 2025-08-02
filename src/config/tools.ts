@@ -2,7 +2,7 @@ import {
   faCode, faExchangeAlt, faClock, faGlobe, faLink, faLock, 
   faImage, faCogs, faFileCode, faKey, faFont, 
   faCalendarAlt, faPalette, faEdit, faRuler, faNetworkWired,
-  faEraser, faCalculator, faFileAlt
+  faEraser, faCalculator, faFileAlt, faCube,faObjectGroup, faCompress
 } from '@fortawesome/free-solid-svg-icons';
 import { Tool } from '@/types/tools';
 
@@ -167,17 +167,41 @@ const tools: Tool[] = [
     keywords: ['图片水印', '水印', '水印添加', '图片', '文字水印', '图片水印', 'watermark', 'image watermark', 'tupian shuiyin', 'tpshuiyin', 'shuiyin', 'sy', 'tp']
   },
   {
-    code: 'image_to_ico',
-    icon: faImage,
-    category: ['image'],
-    keywords: ['图标', 'ico', '图片转ico', 'icon', '图标生成', '图标转换', 'favicon', '网站图标', 'tubiao', 'tb', 'zhuanicon', 'icon转换', 'icon生成']
-  },
-  {
     code: 'cron_generator',
     icon: faCalendarAlt,
     category: ['datetime'],
     keywords: ['cron', 'cron表达式', '定时任务', '调度', '表达式生成', '执行时间', 'crontab', 'quartz', 'schedule', 'dingshi', 'dingshibiaodashi', 'dsrw', 'bds', 'cronbds']
-  }
+  },
+  {
+    code: 'icon_designer',
+    icon: faCube,
+    category: ['common', 'image'],
+    keywords: ['图标设计', '图标生成', 'icon设计', '图标制作', 'app图标', 'logo设计', 'favicon制作', '图标工具', 'icon designer', 'icon generator', 'tubiao', 'tb', 'sheji', 'sj', 'zhizuo', 'zz']
+  },
+
+  // PDF工具
+
+
+  {
+    code: 'pdf_converter',
+    icon: faExchangeAlt,
+    category: ['pdf'],
+    keywords: ['pdf转换', 'pdf转图片', '图片转pdf', 'pdf转文本', 'pdf转换器', 'pdf converter', 'pdf转换工具', 'pdf', 'zhuanhuan', 'zh', 'zhuanhuanqi', 'zhq']
+  },
+  {
+    code: 'pdf_manager',
+    icon: faObjectGroup,
+    category: ['pdf'],
+    keywords: ['pdf合并', 'pdf分割', 'pdf合并器', 'pdf分割器', '合并pdf', '分割pdf', 'pdf合并工具', 'pdf分割工具', 'pdf merger', 'pdf splitter', 'pdf合并软件', 'pdf分割软件', 'pdf', 'hebing', 'fenge', 'hb', 'fg', 'hebingqi', 'fengeqi', 'hbq', 'fgq']
+  },
+  {
+    code: 'pdf_compressor',
+    icon: faCompress,
+    category: ['pdf'],
+    keywords: ['pdf压缩', 'pdf压缩器', '压缩pdf', 'pdf压缩工具', 'pdf compressor', 'pdf压缩软件', 'pdf', 'yasuo', 'ys', 'yasuoqi', 'ysq']
+  },
+
+
 ] as Tool[];
 
 export default tools; 

@@ -12,6 +12,7 @@ const categories: Category[] = [
   { code: "text", active: false },
   { code: "image", active: false },
   { code: "frontend", active: false },
+  { code: "pdf", active: false },
 ];
 
 export default categories; 

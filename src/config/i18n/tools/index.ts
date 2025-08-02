@@ -26,7 +26,11 @@ import base64ToImage from './base64_to_image';
 import imageWatermark from './image_watermark';
 import imageToIco from './image_to_ico';
 import cronGenerator from './cron_generator';
+import { iconDesigner } from './icon_designer';
+import { pdfConverterI18n } from './pdf_converter';
 
+import { pdfManager } from './pdf_manager';
+import { pdfCompressor } from './pdf_compressor';
 export const tools = {
   json_formatter: jsonFormatter,
   regex_tester: regexTester,
@@ -55,7 +59,14 @@ export const tools = {
   base64_to_image: base64ToImage,
   image_watermark: imageWatermark,
   image_to_ico: imageToIco,
-  cron_generator: cronGenerator
+  cron_generator: cronGenerator,
+  icon_designer: iconDesigner,
+
+  pdf_converter: pdfConverterI18n,
+
+  pdf_manager: pdfManager,
+  pdf_compressor: pdfCompressor,
+
 };
 
 export default tools; 
